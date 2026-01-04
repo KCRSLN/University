@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* ANA SITE */
+.site {
+    width: 900px;
+    background-color: #222;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+/* HEADER */
+header {
+    height: 90px;
+    background: linear-gradient(90deg, #1a2d3e, #00f2fe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+/* NAV */
+
+
+nav {
+    height: 55px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* NAV LINKLER */
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* ALT ÇİZGİ EFEKTİ */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #4facfe;
+    transition: width 0.3s ease;
+}
+
+/* HOVER */
+nav a:hover {
+    color: #4facfe;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+/* MAIN */
+main {
+    display: flex;
+    height: 600px;
+}
+
+/* SOL PANEL */
+.sol {
+    width: 220px;
+    background-color: #2d2d2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sol div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* SOSYAL BUTONLAR */
+.button {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #4facfe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+
+
+.button img {
+    width: 45px;
+    height: auto;
+}
+
+/* HOVER EFEKT */
+.button:hover {
+    background-color: #4facfe;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #4facfe;
+}
+/*
+#git:hover{
+    background-color: #37ff9b;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #4facfe;
+}
+#ins:hover{
+    background-color: #ff0d92;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #4facfe;
+}
+#youtube:hover{
+    background-color: #ff0000;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff0000;
+}
+#Twitter:hover{
+    background-color: #0015ff;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #4facfe;
+}
+*/
+
+/* SAĞ ALAN */
+.sag {
+    flex: 1;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    padding: 20px;
+}
+
+/* FOOTER */
+footer {
+    height: 50px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h1 {
+    color: #aaa;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+
+
+
+/** --------MAİN--------  **/
+
+.profile-card {
+    max-width: 420px;
+    margin: auto;
+    background: rgba(0,0,0,0.35);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* PROFIL RESMI */
+.profile-card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4facfe;
+    margin-bottom: 15px;
+}
+
+/* ISIM */
+.profile-card h2 {
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/* ALT BASLIK */
+.profile-card h4 {
+    color: #4facfe;
+    margin: 10px 0 20px;
+    font-weight: normal;
+}
+
+/* ACIKLAMA */
+.profile-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* ETIKETLER */
+.info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.info span {
+    background-color: rgba(79, 172, 254, 0.2);
+    border: 1px solid #4facfe;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
+
+/** --------STU--------  **/
+
+/* EĞİTİM KARTI */
+.edu-card {
+    max-width: 520px;
+    margin: auto;
+    background: rgba(0,0,0,0.35);
+    padding: 30px;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* BAŞLIK */
+.edu-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: #4facfe;
+}
+
+/* EĞİTİM ÖĞESİ */
+.edu-item {
+    border-left: 3px solid #4facfe;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+/* OKUL ADI */
+.edu-item h3 {
+    margin-bottom: 5px;
+}
+
+/* TARİH */
+.edu-item span {
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* AÇIKLAMA */
+.edu-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+
+/** --------ilet--------  **/
+
+
+/* İLETİŞİM KARTI */
+.contact-card {
+    max-width: 520px;
+    margin: auto;
+    background: rgba(0,0,0,0.35);
+    padding: 30px;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* BAŞLIK */
+.contact-card h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    color: #4facfe;
+}
+
+/* AÇIKLAMA */
+.contact-text {
+    text-align: center;
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+/* BİLGİLER */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-info div {
+    background-color: rgba(255,255,255,0.05);
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.contact-info strong {
+    display: block;
+    color: #4facfe;
+    margin-bottom: 5px;
+}
+
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #111;
+    border: 1px solid #4facfe;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+/* GÖNDER BUTONU */
+.contact-form button {
+    background-color: #4facfe;
+    color: #000;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #00c6ff;
+    transform: scale(1.05);
+}
+
+
+
+
+
